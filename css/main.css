@@ -1,0 +1,290 @@
+/**************************
+BASE ELEMENT STYLES
+**************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #4a4a4a;
+  background-color: #f7f7f7;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+h2,
+h3,
+a {
+  color: #4a4a4a;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: .9em;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/**************************
+BASE LAYOUT STYLES
+**************************/
+
+/* ---- NAV ---- */
+.main-nav {
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin-bottom: -5px;
+}
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+  background-color: white;
+  margin: 5px 1.5em;
+  font-size: .95em;
+  text-transform: uppercase;
+}
+
+/* ---- HEADER ---- */
+
+
+.banner {
+  padding: 40px 10px 20px 10px;
+  font-size: 1.05em;
+  color: #7f7f7f;
+}
+
+.profile-picture {
+  width: 70%;
+  max-width: 367px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.profile-copy {
+  width: 80%;
+  max-width: 457px;
+  margin: auto;
+  padding-bottom: 20px;
+
+}
+
+
+
+/* ---- PORTFOLIO ---- */
+
+.col {
+  padding: 22px 1em 4px;
+
+}
+
+.col p {
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 20px
+}
+
+.portfolio {
+  background-color: #fff;
+}
+
+.row {
+  padding-bottom: 40px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* ---- CONTACT ---- */
+
+.contact {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 1.05em;
+  max-width: 450px;
+  margin: auto;
+}
+
+.contact-social-icon {
+  padding: 40px 5px 5px 5px;
+  width: 45px;
+  display: inline-block;
+  opacity: .6;
+}
+
+.contact-social-icon:hover {
+  opacity: .8;
+}
+
+/* ---- FOOTER ---- */
+
+.main-footer {
+  padding: 40px 16px;
+  font-size: 13px;
+  border-top: 1px solid #e7e7e7;
+  font-weight: 700;
+  letter-spacing: .02em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: none;
+}
+
+
+/* ================================= 
+   MEDIA 
+==================================== */
+
+@media (min-width: 700px) {
+
+  .main-header,
+  .main-nav,
+  .row,
+  .banner,
+  .skills-list {
+    display: flex;
+  }
+
+  .title {
+    display: block;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    flex: 1 50%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .main-nav a {
+  background-color: #f7f7f7;
+  }
+
+  .main-footer {
+    width: 90%;
+    margin: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .main-header,
+  .row,
+  .banner,
+  .skills {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .profile-picture {
+    padding-bottom: 10px;
+    margin-left: 50px;
+
+  }
+
+  .banner {
+    flex-direction: row-reverse;
+    text-align: left;
+    font-size: 21px;
+  }
+
+  .main-nav a {
+    padding: 0;
+  }
+
+  .profile-copy {
+    max-width: none;
+  }
+
+  .footer-nav {
+    display: flex;
+  }
+
+  .footer-nav li {
+    padding-left: 40px;
+  }
+
+  .footer-top {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+
+
+  .col {
+    flex: 1 33%;
+  }
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-header,
+  .row,
+  .banner,
+  .main-footer,
+  .skills {
+    width: 95%;
+    max-width: 1125px;
+  }
+
+  .main-nav a {
+    margin-right: 16px;
+    margin-left: 30px;
+  }
+
+  .name {
+    margin-left: 16px;
+  }
+
+  .profile-picture {
+    margin-left: 120px;
+    margin-right: 9px;
+  }
+
+  .profile-copy {
+    margin-left: 5px;
+  }
+}
